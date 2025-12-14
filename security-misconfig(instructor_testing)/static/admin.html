@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+</head>
+<body>
+<h2>Admin Control Panel</h2>
+
+<script>
+fetch("/admin/data?key=hardcoded_admin_key")
+.then(res => res.json())
+.then(data => {
+    document.body.innerHTML += "<pre>" + JSON.stringify(data, null, 2) + "</pre>";
+});
+</script>
+
+</body>
+</html>
