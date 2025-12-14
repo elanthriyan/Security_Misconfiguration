@@ -1,0 +1,7 @@
+version: "3.8"
+
+services:
+  misconfig-lab:
+    build: .
+    ports:
+      - "8000:8000"
